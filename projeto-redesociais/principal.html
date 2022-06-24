@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url(imagens/fundo-madeira.jpg);
+            perspective: -10em;
+        }
+        iframe#iphone{
+            height: 76vh;
+            width: 42.5vh;
+            position: absolute;
+            background-color: white;
+            left: 48%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(imagens/tela-home.jpg);
+
+        }
+        img#icone{
+            position: absolute;
+            left: 94%;
+            top: 3%;
+            width: 10vh;
+            height: 10vh;
+            border-radius: 50%;
+
+        }
+        img#icone1{
+            position: absolute;
+            left: 94%;
+            top: 19%;
+            width: 10vh;
+            height: 10vh;
+            border-radius: 50%;
+
+        }
+        img#icone2{
+            position: absolute;
+            left: 94%;
+            top: 34%;
+            width: 10vh;
+            height: 10vh;
+            border-radius: 50%;
+
+        }
+        img#icone3{
+            position: absolute;
+            left: 94%;
+            top: 50%;
+            width: 10vh;
+            height: 10vh;
+            border-radius: 50%;
+
+        }
+        #celular{
+            background-image: url(imagens/frame-iphone.png);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 50vh;
+            position: absolute;
+            left: 36%;
+            top: 2%;
+        }
+ 
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="celular">
+        
+        <iframe name="iphone" id="iphone"  > </iframe>
+
+    </div>
+
+    <a target="iphone" href="home.html"><img id="icone" src="imagens/logo-home.jpg" alt="home-logo"></a>
+
+    <a target="iphone" href="github.html"><img id="icone1" src="imagens/logo-github.jpg" alt="github-logo"></a>
+
+    <a target="iphone" href="insta.html"><img id="icone2" src="imagens/logo-instagram.jpg" alt="instagram-logo"></a>
+
+    <a target="iphone" href="twitter.html"><img id="icone3" src="imagens/logo-twitter.jpg" alt="twitter-logo"></a>
+    
+    
+</body>
+</html>
