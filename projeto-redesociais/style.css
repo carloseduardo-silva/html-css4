@@ -18,24 +18,26 @@ body{
 }
 
 #celular{
+    position: absolute;
     background: url(imagens/frame-iphone.png) no-repeat;
 
-    height: 108vh;
-    width: 24.29vw;
-    position: absolute;
+    height: 109vh;
+    width: 27.29vw;
+
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
 iframe#iphone{
-    height: 82.75vh;
+    height: 81.5vh;
     width: 20.7vw;
     position: absolute;
     background-color: white;
-    left: 50%;
+    left: 48.5%;
     top: 50%;
     transform: translate(-50%, -50%);
+
    
 
 }
@@ -46,6 +48,8 @@ img#icone{
     width: 10vh;
     height: 10vh;
     border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.436);
+    box-sizing: border-box;
 
 }
 img#icone1{
@@ -55,6 +59,8 @@ img#icone1{
     width: 10vh;
     height: 10vh;
     border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.436);
+    box-sizing: border-box;
 
 }
 img#icone2{
@@ -64,7 +70,8 @@ img#icone2{
     width: 10vh;
     height: 10vh;
     border-radius: 50%;
-
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.436);
+    box-sizing: border-box;
 }
 img#icone3{
     position: absolute;
@@ -73,5 +80,24 @@ img#icone3{
     width: 10vh;
     height: 10vh;
     border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.436);
+    box-sizing: border-box;
+}
+
+section#icones img:hover {
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.44);
+    box-sizing: border-box;
+    transform: translate(-3px, -3px);
+    transition: transform 0.7s,  border 1s;
+}
+
+img#icone4 {
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    left: 94%;
+    top: 66%;
 
 }
