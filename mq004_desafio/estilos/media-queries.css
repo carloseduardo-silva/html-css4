@@ -4,50 +4,76 @@
 @media print {
     img{
         padding: 10px;
-        margin: 5px;
+        margin: 10px;
     }
     img#phone{
-        display: block;
+        display: none;
     }
 
     img#tablet{
-        display: block;
+        display: none;
     }
     
     img#pc{
-        display: block;
+        display: none;
     }
 
     img#tv{
+        display: none;
+    }
+
+    img#impressora{
+        margin: auto;
         display: block;
     }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
     main::after{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
         font-size: 0.8em;
         content: ' Este arquivo foi modificado diretamente pelo uso de Media Queries ' ;
+        text-decoration: solid ;
     }
 }
 /* Configuração Mobile  */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
 img#phone{
     display: block;
 }
+
     
 }
 /* Configuração Tablets */
-@media  screen and (min-width: 481px) {
+@media  screen and (min-width: 769px) {
     img#tablet{
         display: block;
     }
-    
+
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
 }
 /* Configuração para DeskTop e Telas Menores */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     img#tablet{
         display: none;
     }
     
     img#pc{
         display: block;
+    }
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
     }
   
     /*Configuração para TVs */  
@@ -64,5 +90,14 @@ img#phone{
     img#tv{
         display: block;
     }
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 800px;
+    }
+
     
 }
