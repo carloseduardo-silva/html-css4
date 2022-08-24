@@ -1,7 +1,24 @@
 
 function clicar(){
-    resp = document.getElementById('respostareal')
-    resp.innerHTML = '<ul> <li> 01 </li>   <li> 02 </li>   <li> 03 </li>  <li> 04 </li>  <li> 05 </li> </ul>'
+     resp = document.getElementById('res')
+     var margem = document.getElementById('cabeca')
+     if (resp.style.display == 'block') {
+         resp = resp.style.display = 'none'
+         margem = margem.style.marginBottom = '2vh'
+     }
+     else {
+        resp.style.display = 'block'
+        margem = margem.style.marginBottom = '25vh'
+     }
+
          
 }
     
+
+
+
+
+
+
+
+
